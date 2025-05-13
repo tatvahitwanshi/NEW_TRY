@@ -1,0 +1,15 @@
+D:\New_Try\BAL\bin\Debug\net7.0\BAL.deps.json
+D:\New_Try\BAL\bin\Debug\net7.0\BAL.dll
+D:\New_Try\BAL\bin\Debug\net7.0\BAL.pdb
+D:\New_Try\BAL\bin\Debug\net7.0\DAL.dll
+D:\New_Try\BAL\bin\Debug\net7.0\DAL.pdb
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.csproj.AssemblyReference.cache
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.AssemblyInfoInputs.cache
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.AssemblyInfo.cs
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.csproj.CoreCompileInputs.cache
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.csproj.CopyComplete
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.dll
+D:\New_Try\BAL\obj\Debug\net7.0\refint\BAL.dll
+D:\New_Try\BAL\obj\Debug\net7.0\BAL.pdb
+D:\New_Try\BAL\obj\Debug\net7.0\ref\BAL.dll

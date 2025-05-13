@@ -1,7 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
+﻿@model DAL.ViewModels.CustomerViewModel
+@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Customer List";
 }
 <h1>@ViewData["Title"]</h1>
-hjsdhsjdh
+<button type="button" class="btn btn-primary" onclick="GetCustomer()" >Open modal for</button>
 
-<p>Hello Use this page to detail your site's privacy policy.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">PhoneNumber</th>
+      <th scope="col">Action</th>
+
+      
+    </tr>
+  </thead>
+  <tbody>
+        @foreach(var cust in Model.Customers)
+        {
+            <tr>
+            <th scope="row">@cust.Customerid</th>
+            <td>@cust.Customername</td>
+            <td>@cust.Emailaddress</td>
+            <td>@cust.Phonenumber</td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="GetCustomer(@cust.Customerid)" >Edit</button>
+                <button type="button" class="btn btn-primary" onclick="Delete(@cust.Customerid)" >Delete</button>
+            </td>
+            </tr>
+        }
+    
+  </tbody>
+</table>
+
+<div id="customerDetailsModalContainer">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/customer.js"></script>
+@section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+}

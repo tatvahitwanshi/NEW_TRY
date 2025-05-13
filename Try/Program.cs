@@ -1,7 +1,16 @@
+using BAL.Interface;
+using BAL.Repository;
+using DAL.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<CustomersContext>(opt =>
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+builder.Services.AddScoped<ICustomer, CustomerRepo>();
 
 var app = builder.Build();
 
